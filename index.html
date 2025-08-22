@@ -314,7 +314,224 @@
     </section>
     
     
-    
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши повара</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .coockers {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-title h1 {
+            font-size: 36px;
+            text-transform: uppercase;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .chefs-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .chef-card {
+            width: 280px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .chef-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .chef-image {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+        }
+        
+        .chef-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .chef-card:hover .chef-image img {
+            transform: scale(1.05);
+        }
+        
+        .chef-info {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .chef-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        
+        .chef-role {
+            color: #e74c3c;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+        
+        .chef-description {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #7f8c8d;
+        }
+        
+        .chef-specialty {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+        }
+        
+        .specialty-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        @media (max-width: 768px) {
+            .chefs-container {
+                gap: 20px;
+            }
+            
+            .chef-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+
+    <div class="coockers">
+        <div class="section-title">
+            <h1>наши повара</h1>
+        </div>
+        
+        <div class="chefs-container">
+            <!-- Повар 1 -->
+            <div class="chef-card">
+                <div class="chef-image">
+                    <img src="img/Miron.jpg" alt="Шеф-повар Мирон">
+                </div>
+                <div class="chef-info">
+                    <div class="chef-name">Мирон</div>
+                    <div class="chef-role">Шеф-повар</div>
+                    <div class="chef-description">
+                        наш шеф обожает есть бумажную пиццу , поэтому его коронное блюдо это и есть бумажная пицца
+                    </div>
+                    <div class="chef-specialty">
+                        <span class="specialty-title">Фирменное блюдо:</span> попа мирона
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Повар 2 -->
+            <div class="chef-card">
+                <div class="chef-image">
+                    <img src="img/anya.jpg" alt="Повар Анна">
+                </div>
+                <div class="chef-info">
+                    <div class="chef-name">Анна</div>
+                    <div class="chef-role">дигустатор</div>
+                    <div class="chef-description">
+                       Наш работник любит всех кусать , поэтому она работает дигустатором в нашем ресторане
+                    </div>
+                    <div class="chef-specialty">
+                        <span class="specialty-title">любимое блюдо:</span>руки нашего армянина
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Повар 3 -->
+            <div class="chef-card">
+                <div class="chef-image">
+                    <img src="img/varya.jpg" alt="Повар Варя">
+                </div>
+                <div class="chef-info">
+                    <div class="chef-name">Варя</div>
+                    <div class="chef-role">Шеф-кондитер</div>
+                    <div class="chef-description">
+                        
+                    </div>
+                    <div class="chef-specialty">
+                        <span class="specialty-title">Фирменное блюдо:</span> потгоревшие блинчики
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Повар 4 -->
+            <div class="chef-card">
+                <div class="chef-image">
+                    <img src="img/lybimaya.jpg" alt="Повар Ксю">
+                </div>
+                <div class="chef-info">
+                    <div class="chef-name">Ксю</div>
+                    <div class="chef-role">шеф-повар</div>
+                    <div class="chef-description">
+                       Наш самый ценный работник. Если попросить шеф-повара Ксю приготовить того чего нету в меню то она обязательно примет ваш заказ
+                    </div>
+                    <div class="chef-specialty">
+                        <span class="specialty-title">Фирменное блюдо:</span>Пиздюли Максиму
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Повар 5 -->
+            <div class="chef-card">
+                <div class="chef-image">
+                    <img src="img/Makson.jpg" alt="Повар Максим">
+                </div>
+                <div class="chef-info">
+                    <div class="chef-name">дядя Ашот</div>
+                    <div class="chef-role">Шеф по грилю</div>
+                    <div class="chef-description">
+                        НАш повар родом из Армении 
+                    </div>
+                    <div class="chef-specialty">
+                        <span class="specialty-title">Фирменное блюдо:</span>Армянски шашлык
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <section id="contacts" class="section-contacts">
         <div class="section-title">Контакты</div>
